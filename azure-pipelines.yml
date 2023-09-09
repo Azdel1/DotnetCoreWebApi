@@ -1,7 +1,7 @@
 # ASP.NET Core (.NET Framework) Build Pipeline
 
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -15,7 +15,7 @@ steps:
   inputs:
     packageType: 'sdk'
     installationPath: $(Agent.ToolsDirectory)/dotnet
-    version: '5.x' # Choose the appropriate .NET SDK version
+    version: '7.0' # Choose the appropriate .NET SDK version
 
 - task: NuGetCommand@2
   inputs:
