@@ -21,6 +21,7 @@ namespace DotNetCoreJS.Controllers
             _context = context;
         }
 
+        //Get
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
