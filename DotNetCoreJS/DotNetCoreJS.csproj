@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
+   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
