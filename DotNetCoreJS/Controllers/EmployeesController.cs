@@ -32,7 +32,7 @@ namespace DotNetCoreJS.Controllers
             return await _context.Employees.ToListAsync();
         }
 
-      /* [HttpGet("{id}")]
+      [HttpGet("{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
           if (_context.Employees == null)
@@ -47,7 +47,7 @@ namespace DotNetCoreJS.Controllers
             }
 
             return employee;
-        }*/
+        }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmployee(int id, Employee employee)
